@@ -2,6 +2,10 @@
 
 :root {
     --font-family: 'Open Sans', sans-serif;
+    --light-bg: #FFFFFF;
+    --light-text: #333333;
+    --dark-bg: #333333;
+    --dark-text: #FFFFFF;
 }
 
 *, 
@@ -19,7 +23,14 @@ input, button, textarea, select {
 }
 
 body {
-    font-family: var(--font-family)
+    font-family: var(--font-family);
+    background-color: var(--light-bg);
+    color: var(--light-text);
+}
+
+.dark-mode {
+    --light-bg: var(--dark-bg);
+    --light-text: var(--dark-text);
 }
 
 .container {
