@@ -7,5 +7,7 @@ themeSelect.addEventListener('change', event => {
     selectedTheme == 'dark' 
     ? document.body.classList.add('dark-mode')
     : document.body.classList.remove('dark-mode');
-    
+
 })
+
+slideInSections = document.querySelectorAll('.slide-in-left');
