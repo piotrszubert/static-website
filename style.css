@@ -50,3 +50,59 @@ body {
         padding: 0 1rem;
     }
 }
+
+.flex {
+    display: flex;
+}
+
+.flex.flex-row {
+    flex-direction: row;
+}
+
+.flex.flex-column {
+    flex-direction: column;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-start {
+    justify-content: center;
+}
+
+.align-items-end {
+    align-items: end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: center;
+}
+
+.px-1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.py-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.mx-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.my-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
