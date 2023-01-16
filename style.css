@@ -2,6 +2,7 @@
 
 :root {
     --font-family: 'Open Sans', sans-serif;
+    --line-height: 1.65;
     --light-bg: #FFFFFF;
     --light-text: #333333;
     --dark-bg: #333333;
@@ -24,6 +25,7 @@ input, button, textarea, select {
 
 body {
     font-family: var(--font-family);
+    line-height: var(--line-height);
     background-color: var(--light-bg);
     color: var(--light-text);
 }
@@ -51,6 +53,7 @@ body {
     }
 }
 
+/* utility classes */
 .flex {
     display: flex;
 }
