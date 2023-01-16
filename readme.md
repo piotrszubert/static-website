@@ -1,0 +1,3 @@
+Start app:
+
+npx serve 
