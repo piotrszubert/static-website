@@ -1,13 +1,16 @@
 document.getElementById('themeToggleButton').addEventListener('click', e => {
-    // console.log(e);
     toggleTheme(e);
 })
 
 function setTheme(theme) {
     if(theme == 'dark') {
         document.body.classList.add('dark-mode');
+        document.getElementById('themeDarkIcon').style.display = 'none';
+        document.getElementById('themeLightIcon').style.display = 'inline';
     } else {
         document.body.classList.remove('dark-mode');
+        document.getElementById('themeDarkIcon').style.display = 'inline';
+        document.getElementById('themeLightIcon').style.display = 'none';
     }
 }
 
@@ -22,10 +25,8 @@ function toggleTheme() {
     currentTheme === 'dark' 
     ? localStorage.setItem('currentTheme', 'dark') 
     : localStorage.setItem('currentTheme', 'light');
-    console.log(currentTheme)
 
     if (currentTheme == 'dark') {
-        console.log('chuj')
         localStorage.setItem('currentTheme', 'light');
         setTheme('light');
     } else {
