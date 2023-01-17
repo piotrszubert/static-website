@@ -35,5 +35,3 @@ function toggleTheme() {
     }
 
 }
-
-slideInSections = document.querySelectorAll('.slide-in-left');
