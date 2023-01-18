@@ -45,21 +45,26 @@
                 height: 100px;
                 border-radius: 10px;
                 background-color: #5928ED;
+                display: grid;
+                place-items: center;
+                font-weight: 700;
             }
 
             .box:nth-child(2){background-color: #2546F0;}
             .box:nth-child(3){background-color: #0073E6;}
-            .box:nth-child(4){background-color: #00B4C5;}
-            .box:nth-child(5){background-color: #00BF7D;}
+            .box:nth-child(4){background-color: #00B4C5; color: #111;}
+            .box:nth-child(5){background-color: #00BF7D; color: #111;}
 
         </style>
 
-        <div class="container">
+        <div class="container py-1 my-1">
+            <h1 class="hidden my-1 py-1" style="text-align: center;">Pallete 1</h1>
             <div class="flex gap-1 justify-content-center" style="flex-wrap: wrap;">
-                <div class="box hidden" style="transition-delay: 100ms;"></div>
-                <div class="box hidden" style="transition-delay: 300ms;"></div>
-                <div class="box hidden" style="transition-delay: 600ms;"></div>
-                <div class="box hidden" style="transition-delay: 900ms;"></div>
+                <div class="box hidden" style="transition-delay: 100ms;">#5928ED</div>
+                <div class="box hidden" style="transition-delay: 300ms;">#2546F0</div>
+                <div class="box hidden" style="transition-delay: 600ms;">#0073E6</div>
+                <div class="box hidden" style="transition-delay: 900ms;">#00B4C5</div>
+                <div class="box hidden" style="transition-delay: 1100ms;">#00BF7D</div>
             </div>
         </div>
 
