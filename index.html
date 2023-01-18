@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container py-1 px-1">
+    <div class=" py-1 px-1">
         <button class="button-theme-toggle" id="themeToggleButton">
             <svg id="themeDarkIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
                     <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
@@ -18,25 +18,49 @@
             </svg>
         </button>
 
-        <div class="container hidden py-1 my-1" style="height: 100vh;">
+        <div class="container hidden py-1 my-1" style="min-height: 100vh;">
             <h1>Heading 1</h1>
             <p class="">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ratione velit quas vitae corrupti sed obcaecati aperiam! Ullam non, ex consequatur voluptatum nulla dolores, assumenda id voluptatem illum repellat sint praesentium. Nulla sunt repellat, mollitia doloremque at sapiente aspernatur magnam sit ea? Nam reprehenderit expedita officia repudiandae assumenda officiis dolor, vitae minima cumque ipsam nemo recusandae sunt itaque veritatis quam maiores sint dolorem qui, odit sed. Doloribus asperiores quod officia rerum minima quisquam facere dolorum fugit eos fuga, fugiat atque consequatur mollitia excepturi sed libero nihil quaerat in! Blanditiis deserunt autem quo, laborum asperiores perferendis dolores laboriosam distinctio maxime provident.
             </p>
         </div>
 
-        <div class="container hidden py-1 my-1" style="height: 100vh;">
+        <div class="container hidden py-1 my-1" style="min-height: 100vh;">
             <h1>Heading 2</h1>
             <p class="">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ratione velit quas vitae corrupti sed obcaecati aperiam! Ullam non, ex consequatur voluptatum nulla dolores, assumenda id voluptatem illum repellat sint praesentium. Nulla sunt repellat, mollitia doloremque at sapiente aspernatur magnam sit ea? Nam reprehenderit expedita officia repudiandae assumenda officiis dolor, vitae minima cumque ipsam nemo recusandae sunt itaque veritatis quam maiores sint dolorem qui, odit sed. Doloribus asperiores quod officia rerum minima quisquam facere dolorum fugit eos fuga, fugiat atque consequatur mollitia excepturi sed libero nihil quaerat in! Blanditiis deserunt autem quo, laborum asperiores perferendis dolores laboriosam distinctio maxime provident.
             </p>
         </div>
 
-        <div class="container hidden py-1 my-1" style="height: 100vh;">
+        <div class="container hidden py-1 my-1" style="min-height: 100vh;">
             <h1>Heading 3</h1>
             <p class="">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ratione velit quas vitae corrupti sed obcaecati aperiam! Ullam non, ex consequatur voluptatum nulla dolores, assumenda id voluptatem illum repellat sint praesentium. Nulla sunt repellat, mollitia doloremque at sapiente aspernatur magnam sit ea? Nam reprehenderit expedita officia repudiandae assumenda officiis dolor, vitae minima cumque ipsam nemo recusandae sunt itaque veritatis quam maiores sint dolorem qui, odit sed. Doloribus asperiores quod officia rerum minima quisquam facere dolorum fugit eos fuga, fugiat atque consequatur mollitia excepturi sed libero nihil quaerat in! Blanditiis deserunt autem quo, laborum asperiores perferendis dolores laboriosam distinctio maxime provident.
             </p>
+        </div>
+
+        <style>
+            .box {
+                width: 100px;
+                height: 100px;
+                border-radius: 10px;
+                background-color: #5928ED;
+            }
+
+            .box:nth-child(2){background-color: #2546F0;}
+            .box:nth-child(3){background-color: #0073E6;}
+            .box:nth-child(4){background-color: #00B4C5;}
+            .box:nth-child(5){background-color: #00BF7D;}
+
+        </style>
+
+        <div class="container">
+            <div class="flex gap-1 justify-content-center" style="flex-wrap: wrap;">
+                <div class="box hidden" style="transition-delay: 100ms;"></div>
+                <div class="box hidden" style="transition-delay: 300ms;"></div>
+                <div class="box hidden" style="transition-delay: 600ms;"></div>
+                <div class="box hidden" style="transition-delay: 900ms;"></div>
+            </div>
         </div>
 
         

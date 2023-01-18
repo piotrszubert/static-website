@@ -138,6 +138,10 @@ body {
     align-items: center;
 }
 
+.gap-1 {
+    gap: 1rem;
+}
+
 .px-1 {
     padding-left: 1rem;
     padding-right: 1rem;
